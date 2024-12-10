@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        text-align: center;
+        font-family: sans-serif;
+       }
+       input{
+        border: 2px solid ;
+        height: 30px;
+        border-radius: 7px;
+        font-size: 20px;
+        width: 200px;
+        text-transform: capitalize;
+        font-weight: bolder;
+       }
+       #button{
+        height: 35px;
+        font-size: 18px;
+        text-transform: capitalize;
+        background-color: green;
+        color: white;
+        font-weight: bolder;
+        border-radius: 7px;
+        cursor: pointer;
+       }
+       #button:active{
+        background-color: rgb(5, 182, 5);
+       }
+       .enter{
+        display: flex;
+        justify-self: center;
+        gap: 5px;
+       }
+       #parent{
+        background:linear-gradient( aqua, yellow);
+        /* display: inline-block; */
+        padding: 20px 50px;
+        border-radius: 5px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 7px;
+        display: none;
+       }
+       #parent ::selection{
+        background-color: grey;
+       }
+       #cityName{
+        text-transform: capitalize;
+        font-size: 36px;
+        margin-top: 0;
+        display: none;
+       }
+       #deg{
+        font-size: 34px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+       }
+       #humidity{
+        text-transform: capitalize;
+        font-size: 18px;
+        display: none;
+       }
+       #status{
+        font-size: 30px;
+        font-weight: bolder;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+       }
+       #icon{
+        font-size: 65px;
+        display: none;
+       }
+       .neww{
+        font-size: 30px;
+        margin: 0;
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="enter">
+            <input type="text" id="input" placeholder="Enter a city">
+            <button id="button">get weather</button>
+        </div>
+
+        <div id="parent">
+            <h1 id="cityName"></h1>
+            <h3 id="deg"></h3>
+            <h3 id="humidity"></h3>
+            <p id="status"></p>
+            <div id="icon"></div>
+        </div>
+    </div>
+
+    <script src="ani.js"></script>
+</body>
+</html>
